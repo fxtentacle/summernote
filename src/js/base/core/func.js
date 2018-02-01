@@ -48,7 +48,7 @@ function self(a) {
 
 function invoke(obj, method) {
   return () => {
-    return obj[method].apply(obj, arguments);
+    return obj[method].call(obj);
   };
 }
 
